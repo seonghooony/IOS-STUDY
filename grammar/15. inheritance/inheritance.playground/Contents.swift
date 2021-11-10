@@ -45,6 +45,7 @@ train.makeNoise()
 
 class Car: Vehicle{
     var gear = 1
+    var test = 2
     //override var currentSpeed: Double = 123.0 //get set 프로퍼티만 가능
     override var description: String {
         return super.description + " in gear \(gear)"
@@ -60,6 +61,7 @@ class AutomaticCar: Car {
     override var currentSpeed: Double {
         didSet {
             gear = Int(currentSpeed / 10) + 1
+            test = 20
         }
     }
 }
@@ -67,3 +69,4 @@ class AutomaticCar: Car {
 let automatic = AutomaticCar()
 automatic.currentSpeed = 35.0
 print("AutomaticCar: \(automatic.description)")
+print("\(automatic.test)")

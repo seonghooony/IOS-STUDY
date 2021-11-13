@@ -44,6 +44,9 @@ var songCount = 0
 for item in library {
     if item is Movie {
         movieCount += 1
+        //타입이 MediaItem형태이므로 down casting이 필요함
+        //print(item.director)
+        //MediaItem 안에 name 프로퍼티가 있기에 출력 가능
         print(item.name)
     }else if item is Song {
         songCount += 1

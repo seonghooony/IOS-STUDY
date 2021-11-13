@@ -70,3 +70,9 @@ let automatic = AutomaticCar()
 automatic.currentSpeed = 35.0
 print("AutomaticCar: \(automatic.description)")
 print("\(automatic.test)")
+
+/*
+ 메소드, 프로퍼티, 서브스크립트가 override를 금지할 수 있는 방법은 super class의 해당사항에 final을 붙이면 됨.
+ 주로 재정의 할 필요가 없을 때 final을 사용하는 것이 좋음.
+ 참고로 클래스 자체가 상속되는 것을 막을려고 할 때도 final을 사용 할 수 있음.
+ */

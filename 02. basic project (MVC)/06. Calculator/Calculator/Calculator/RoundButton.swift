@@ -7,8 +7,10 @@
 
 import UIKit
 
+//스토리보드에 실시간으로 보이기
 @IBDesignable
 class RoundButton: UIButton {
+    //커스텀 속성 추가
     @IBInspectable var isRound: Bool = false {
         didSet {
             if isRound {

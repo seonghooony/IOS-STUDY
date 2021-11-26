@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol WriteDiaryViewDelegate: AnyObject {
+    func didSelectRegister(diary: Diary)
+}
+
 class WriteDiaryViewController: UIViewController {
 
     @IBOutlet weak var titleTextField: UITextField!
@@ -19,11 +23,14 @@ class WriteDiaryViewController: UIViewController {
     
     private let datePicker = UIDatePicker()
     private var diaryDate: Date?
+    weak var delegate: WriteDiaryViewDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configureContensTextView()
         self.configureDatePicker()
+        self.configureInputField()
+        self.confirmButton.isEnabled = false
     }
     
     //텍스트필드뷰의 테두리를 나타내줌.
@@ -51,13 +58,47 @@ class WriteDiaryViewController: UIViewController {
         
         self.diaryDate = datePicker.date
         self.dateTextField.text = formmater.string(from: datePicker.date)
+        self.dateTextField.sendActions(for: .editingChanged)
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         //빈 화면을 눌러줄때 마다 하단 키보드나 데이트피커가 사라짐
         self.view.endEditing(true)
     }
     
+    private func configureInputField() {
+        self.contentsTextView.delegate = self
+        self.titleTextField.addTarget(self, action: #selector(titleTextFieldDidChange(_:)), for: .editingChanged)
+        self.dateTextField.addTarget(self, action: #selector(dateTextFieldDidChange(_:)), for: .editingChanged)
+    }
+    
+    @objc private func titleTextFieldDidChange(_ TextField: UITextField) {
+        self.validateInputField()
+    }
+    
+    @objc private func dateTextFieldDidChange(_ TextField: UITextField) {
+        self.validateInputField()
+    }
+    
     @IBAction func tapConfirmButton(_ sender: UIBarButtonItem) {
+        
+        guard let title = self.titleTextField.text else { return }
+        guard let contents = self.contentsTextView.text else { return }
+        guard let date = self.diaryDate else { return }
+        let diary = Diary(title: title, contents: contents, date: date, isStar: false)
+        self.delegate?.didSelectRegister(diary: diary)
+        self.navigationController?.popViewController(animated: true)
          
+    }
+    
+    private func validateInputField() {
+        self.confirmButton.isEnabled = !(self.titleTextField.text?.isEmpty ?? true) && !(self.dateTextField.text?.isEmpty ?? true) && !self.contentsTextView.text.isEmpty
+    }
+    
+}
+
+
+extension WriteDiaryViewController: UITextViewDelegate {
+    func textViewDidChange(_ textView: UITextView) {
+        self.validateInputField()
     }
 }

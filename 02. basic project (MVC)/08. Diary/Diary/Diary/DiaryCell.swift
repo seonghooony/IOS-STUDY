@@ -14,4 +14,11 @@ class DiaryCell: UICollectionViewCell {
     
     @IBOutlet weak var dateLabel: UILabel!
     
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        self.contentView.layer.cornerRadius = 6.0
+        self.contentView.layer.borderWidth = 0.5
+        self.contentView.layer.borderColor = UIColor.gray.cgColor
+    }
+    
 }

@@ -21,7 +21,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.configureCollectionView()
         self.loadDiaryList()
+        
         //옵저버 받은 후 동작 설정
+        //#샐랙터 : 동작 함수 설정
+        //이름 : 받을 옵저버 키값
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(editDiaryNotification(_:)),
@@ -42,7 +45,7 @@ class ViewController: UIViewController {
         )
     }
     
-    //콜렉션뷰 사용 전 init
+    //콜렉션뷰 사용 전 콜렉션뷰 init
     private func configureCollectionView() {
         self.collectionView.collectionViewLayout = UICollectionViewFlowLayout()
         self.collectionView.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
@@ -51,6 +54,8 @@ class ViewController: UIViewController {
         
     }
     
+    //샐랙터 함수 정의
+    //notification 은 받은 옵저버 객체
     @objc func editDiaryNotification(_ notification: Notification) {
         guard let diary = notification.object as? Diary else { return }
         //해당 uuid를 가진 diary의 인덱스 값을 추출

@@ -22,35 +22,67 @@
                                     <constraint firstAttribute="width" constant="100" id="zOB-zF-ISv"/>
                                 </constraints>
                             </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ra-i8-9x8">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ra-i8-9x8">
                                 <rect key="frame" x="24" y="248" width="366" height="60"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="PQp-1z-1w9">
+                            <progressView opaque="NO" alpha="0.0" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="PQp-1z-1w9">
                                 <rect key="frame" x="48" y="338" width="318" height="4"/>
                             </progressView>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFo-07-uL7">
                                 <rect key="frame" x="0.0" y="198" width="414" height="216"/>
                             </datePicker>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="yeq-on-6po">
+                                <rect key="frame" x="24" y="438" width="366" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8L-BE-3sQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="143" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="취소"/>
+                                        <connections>
+                                            <action selector="tapCancelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6R5-Cu-ylP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4k-pV-sFm">
+                                        <rect key="frame" x="223" y="0.0" width="143" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="시작"/>
+                                        <connections>
+                                            <action selector="tapToggleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PcR-gI-ryy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3Ra-i8-9x8" firstAttribute="top" secondItem="i42-TW-pjP" secondAttribute="bottom" constant="80" id="6bf-5D-O0M"/>
+                            <constraint firstItem="yeq-on-6po" firstAttribute="top" secondItem="TFo-07-uL7" secondAttribute="bottom" constant="24" id="OFt-zk-9wI"/>
+                            <constraint firstItem="yeq-on-6po" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Rfv-bc-e68"/>
                             <constraint firstItem="PQp-1z-1w9" firstAttribute="top" secondItem="3Ra-i8-9x8" secondAttribute="bottom" constant="30" id="T2o-p3-tV8"/>
                             <constraint firstItem="TFo-07-uL7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TAL-ug-eFm"/>
                             <constraint firstItem="i42-TW-pjP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="VxK-gz-q0l"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PQp-1z-1w9" secondAttribute="trailing" constant="48" id="cKT-C3-dgC"/>
                             <constraint firstItem="PQp-1z-1w9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="fpc-AD-cJ8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Ra-i8-9x8" secondAttribute="trailing" constant="24" id="jXF-8b-hAZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yeq-on-6po" secondAttribute="trailing" constant="24" id="kms-iS-HFr"/>
                             <constraint firstItem="TFo-07-uL7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kvq-Oy-PTi"/>
                             <constraint firstItem="3Ra-i8-9x8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="lqR-iD-mOn"/>
                             <constraint firstItem="i42-TW-pjP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rHl-Ky-iZR"/>
                             <constraint firstItem="TFo-07-uL7" firstAttribute="top" secondItem="i42-TW-pjP" secondAttribute="bottom" constant="30" id="tQA-7D-cuD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="s8L-BE-3sQ" id="0Bi-Rc-mvX"/>
+                        <outlet property="datePicker" destination="TFo-07-uL7" id="dAY-BC-AcN"/>
+                        <outlet property="imageView" destination="i42-TW-pjP" id="s1H-rL-ZtT"/>
+                        <outlet property="progressView" destination="PQp-1z-1w9" id="fYF-Dz-dod"/>
+                        <outlet property="timerLabel" destination="3Ra-i8-9x8" id="1vn-lC-SoP"/>
+                        <outlet property="toggleButton" destination="f4k-pV-sFm" id="2eL-LQ-t0q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,6 +13,8 @@
 		DBF7DF512759EDC900F9F28F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF7DF4F2759EDC900F9F28F /* Main.storyboard */; };
 		DBF7DF532759EDCA00F9F28F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF7DF522759EDCA00F9F28F /* Assets.xcassets */; };
 		DBF7DF562759EDCA00F9F28F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF7DF542759EDCA00F9F28F /* LaunchScreen.storyboard */; };
+		DBF7DF5E275B157000F9F28F /* WheatherInfomation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7DF5D275B157000F9F28F /* WheatherInfomation.swift */; };
+		DBF7DF60275B1E5C00F9F28F /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7DF5F275B1E5C00F9F28F /* ErrorMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DBF7DF522759EDCA00F9F28F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBF7DF552759EDCA00F9F28F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBF7DF572759EDCA00F9F28F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBF7DF5D275B157000F9F28F /* WheatherInfomation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherInfomation.swift; sourceTree = "<group>"; };
+		DBF7DF5F275B1E5C00F9F28F /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				DBF7DF522759EDCA00F9F28F /* Assets.xcassets */,
 				DBF7DF542759EDCA00F9F28F /* LaunchScreen.storyboard */,
 				DBF7DF572759EDCA00F9F28F /* Info.plist */,
+				DBF7DF5D275B157000F9F28F /* WheatherInfomation.swift */,
+				DBF7DF5F275B1E5C00F9F28F /* ErrorMessage.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -140,7 +146,9 @@
 			files = (
 				DBF7DF4E2759EDC900F9F28F /* ViewController.swift in Sources */,
 				DBF7DF4A2759EDC900F9F28F /* AppDelegate.swift in Sources */,
+				DBF7DF60275B1E5C00F9F28F /* ErrorMessage.swift in Sources */,
 				DBF7DF4C2759EDC900F9F28F /* SceneDelegate.swift in Sources */,
+				DBF7DF5E275B157000F9F28F /* WheatherInfomation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,6 +34,7 @@
 		DBF7DFA72761E7BD00F9F28F /* EnterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailViewController.swift; sourceTree = "<group>"; };
 		DBF7DFA92761ED1E00F9F28F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DBF7DFAB2761F2C300F9F28F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DBF7DFAD276459FB00F9F28F /* FirebaseLoginSampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseLoginSampleApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +63,6 @@
 				C797E68E1331634731B715E7 /* Pods-FirebaseLoginSampleApp.debug.xcconfig */,
 				428D8B20DF88160B97121E2A /* Pods-FirebaseLoginSampleApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -87,16 +87,17 @@
 		DBF7DF90276055FD00F9F28F /* FirebaseLoginSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				DBF7DFAD276459FB00F9F28F /* FirebaseLoginSampleApp.entitlements */,
 				DBF7DF91276055FD00F9F28F /* AppDelegate.swift */,
 				DBF7DF93276055FD00F9F28F /* SceneDelegate.swift */,
 				DBF7DF97276055FD00F9F28F /* Main.storyboard */,
 				DBF7DFA52760564900F9F28F /* LoginViewController.swift */,
 				DBF7DFA72761E7BD00F9F28F /* EnterEmailViewController.swift */,
+				DBF7DFA92761ED1E00F9F28F /* MainViewController.swift */,
 				DBF7DF9A276055FE00F9F28F /* Assets.xcassets */,
 				DBF7DF9C276055FE00F9F28F /* LaunchScreen.storyboard */,
 				DBF7DF9F276055FE00F9F28F /* Info.plist */,
 				DBF7DFAB2761F2C300F9F28F /* GoogleService-Info.plist */,
-				DBF7DFA92761ED1E00F9F28F /* MainViewController.swift */,
 			);
 			path = FirebaseLoginSampleApp;
 			sourceTree = "<group>";
@@ -369,6 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FirebaseLoginSampleApp/FirebaseLoginSampleApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H95MAPX5SG;
@@ -398,6 +400,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FirebaseLoginSampleApp/FirebaseLoginSampleApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H95MAPX5SG;

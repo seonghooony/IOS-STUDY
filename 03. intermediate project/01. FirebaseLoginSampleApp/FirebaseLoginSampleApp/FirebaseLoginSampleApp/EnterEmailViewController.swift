@@ -43,7 +43,15 @@ class EnterEmailViewController: UIViewController {
             guard let self = self else { return }
             
             if let error = error {
-                self.showAlert(message: error.localizedDescription)
+                let code = (error as NSError).code
+                switch code {
+                //이미 가입한 계정일때
+                case 17007:
+                    self.loginUser(withEmail: email, password: password)
+                default:
+                    self.errorMessageLabel.text = error.localizedDescription
+                }
+                
             } else {
                 
                 self.showMainViewController()
@@ -63,6 +71,18 @@ class EnterEmailViewController: UIViewController {
         let alert = UIAlertController(title: "에러", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    private func loginUser(withEmail email: String, password: String) {
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] _, error in
+            guard let self = self else { return }
+            if let error = error {
+                self.errorMessageLabel.text = error.localizedDescription
+            } else {
+                self.showMainViewController()
+            }
+            
+        }
     }
     
 }

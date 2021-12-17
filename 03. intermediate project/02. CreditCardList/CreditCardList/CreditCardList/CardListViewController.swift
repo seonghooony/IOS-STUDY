@@ -157,7 +157,7 @@ class CardListViewController: UITableViewController {
             //option1
             let cardID = creditCardList[indexPath.row].id
             //db.collection("creditCardList").document("card\(cardID)").delete()
-            
+             
             //option2
             db.collection("creditCardList").whereField("id", isEqualTo: cardID).getDocuments { snapshot, _ in
                 guard let document = snapshot?.documents.first else {

@@ -28,7 +28,7 @@ class NoticeViewController: UIViewController {
         titleLabel.text = noticeContents.title
         detailLabel.text = noticeContents.detail
         dateLabel.text = noticeContents.date
-        
+         
         
     }
 

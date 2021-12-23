@@ -18,11 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UNUserNotificationCenter.current().delegate = self
         
-        let authrizationOptions = UNAuthorizationOptions(arrayLiteral: [.alert, .badge, .sound])
-        userNotificationCenter?.requestAuthorization(options: authrizationOptions) { _, error in
-            if let error = error {
-                print("ERROR: noticfication authrization request \(error.localizedDescription)")
-            }
+//        let authrizationOptions = UNAuthorizationOptions(arrayLiteral: [.alert, .badge, .sound])
+//        userNotificationCenter?.requestAuthorization(options: authrizationOptions) { _, error in
+//            if let error = error {
+//                debugPrint("ERROR: noticfication authrization request \(error.localizedDescription)")
+//            }
+//            
+//        }
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
             
         }
         

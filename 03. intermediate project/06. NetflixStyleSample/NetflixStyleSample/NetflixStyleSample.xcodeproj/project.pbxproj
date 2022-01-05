@@ -17,6 +17,7 @@
 		DBF7E07D2781568D00F9F28F /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7E07C2781568D00F9F28F /* Content.swift */; };
 		DBF7E07F2782950800F9F28F /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7E07E2782950800F9F28F /* ContentCollectionViewCell.swift */; };
 		DBF7E081278296F900F9F28F /* ContentCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7E080278296F900F9F28F /* ContentCollectionViewHeader.swift */; };
+		DBF7E083278589FB00F9F28F /* ContentCollectionViewRankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7E082278589FB00F9F28F /* ContentCollectionViewRankCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		DBF7E07C2781568D00F9F28F /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		DBF7E07E2782950800F9F28F /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
 		DBF7E080278296F900F9F28F /* ContentCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewHeader.swift; sourceTree = "<group>"; };
+		DBF7E082278589FB00F9F28F /* ContentCollectionViewRankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewRankCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				DBF7E07C2781568D00F9F28F /* Content.swift */,
 				DBF7E07E2782950800F9F28F /* ContentCollectionViewCell.swift */,
 				DBF7E080278296F900F9F28F /* ContentCollectionViewHeader.swift */,
+				DBF7E082278589FB00F9F28F /* ContentCollectionViewRankCell.swift */,
 			);
 			path = NetflixStyleSample;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				DBF7E062278150BE00F9F28F /* AppDelegate.swift in Sources */,
 				DBF7E081278296F900F9F28F /* ContentCollectionViewHeader.swift in Sources */,
 				DBF7E064278150BE00F9F28F /* SceneDelegate.swift in Sources */,
+				DBF7E083278589FB00F9F28F /* ContentCollectionViewRankCell.swift in Sources */,
 				DBF7E0762781514700F9F28F /* HomeViewController.swift in Sources */,
 				DBF7E07D2781568D00F9F28F /* Content.swift in Sources */,
 				DBF7E07F2782950800F9F28F /* ContentCollectionViewCell.swift in Sources */,

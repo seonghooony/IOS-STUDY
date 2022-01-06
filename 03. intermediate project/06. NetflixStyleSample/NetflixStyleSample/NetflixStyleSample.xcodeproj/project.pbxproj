@@ -18,6 +18,8 @@
 		DBF7E07F2782950800F9F28F /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7E07E2782950800F9F28F /* ContentCollectionViewCell.swift */; };
 		DBF7E081278296F900F9F28F /* ContentCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7E080278296F900F9F28F /* ContentCollectionViewHeader.swift */; };
 		DBF7E083278589FB00F9F28F /* ContentCollectionViewRankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7E082278589FB00F9F28F /* ContentCollectionViewRankCell.swift */; };
+		DBF7E0852786E44400F9F28F /* ContentCollectionViewMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7E0842786E44400F9F28F /* ContentCollectionViewMainCell.swift */; };
+		DBF7E0872786EB3400F9F28F /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7E0862786EB3400F9F28F /* UIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		DBF7E07E2782950800F9F28F /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
 		DBF7E080278296F900F9F28F /* ContentCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewHeader.swift; sourceTree = "<group>"; };
 		DBF7E082278589FB00F9F28F /* ContentCollectionViewRankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewRankCell.swift; sourceTree = "<group>"; };
+		DBF7E0842786E44400F9F28F /* ContentCollectionViewMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewMainCell.swift; sourceTree = "<group>"; };
+		DBF7E0862786EB3400F9F28F /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 				DBF7E07E2782950800F9F28F /* ContentCollectionViewCell.swift */,
 				DBF7E080278296F900F9F28F /* ContentCollectionViewHeader.swift */,
 				DBF7E082278589FB00F9F28F /* ContentCollectionViewRankCell.swift */,
+				DBF7E0842786E44400F9F28F /* ContentCollectionViewMainCell.swift */,
+				DBF7E0862786EB3400F9F28F /* UIButton.swift */,
 			);
 			path = NetflixStyleSample;
 			sourceTree = "<group>";
@@ -159,10 +165,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBF7E062278150BE00F9F28F /* AppDelegate.swift in Sources */,
+				DBF7E0872786EB3400F9F28F /* UIButton.swift in Sources */,
 				DBF7E081278296F900F9F28F /* ContentCollectionViewHeader.swift in Sources */,
 				DBF7E064278150BE00F9F28F /* SceneDelegate.swift in Sources */,
 				DBF7E083278589FB00F9F28F /* ContentCollectionViewRankCell.swift in Sources */,
 				DBF7E0762781514700F9F28F /* HomeViewController.swift in Sources */,
+				DBF7E0852786E44400F9F28F /* ContentCollectionViewMainCell.swift in Sources */,
 				DBF7E07D2781568D00F9F28F /* Content.swift in Sources */,
 				DBF7E07F2782950800F9F28F /* ContentCollectionViewCell.swift in Sources */,
 			);

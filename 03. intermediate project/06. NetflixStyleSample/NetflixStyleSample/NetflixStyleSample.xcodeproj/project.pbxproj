@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB09D0AB27900EE800FA7788 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB09D0AA27900EE800FA7788 /* ContentView.swift */; };
+		DB09D0AD2790115400FA7788 /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB09D0AC2790115400FA7788 /* ContentDetailView.swift */; };
 		DBF7E062278150BE00F9F28F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7E061278150BE00F9F28F /* AppDelegate.swift */; };
 		DBF7E064278150BE00F9F28F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7E063278150BE00F9F28F /* SceneDelegate.swift */; };
 		DBF7E06B278150BF00F9F28F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF7E06A278150BF00F9F28F /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB09D0AA27900EE800FA7788 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB09D0AC2790115400FA7788 /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
 		DBF7E05E278150BE00F9F28F /* NetflixStyleSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixStyleSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF7E061278150BE00F9F28F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBF7E063278150BE00F9F28F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 				DBF7E082278589FB00F9F28F /* ContentCollectionViewRankCell.swift */,
 				DBF7E0842786E44400F9F28F /* ContentCollectionViewMainCell.swift */,
 				DBF7E0862786EB3400F9F28F /* UIButton.swift */,
+				DB09D0AA27900EE800FA7788 /* ContentView.swift */,
+				DB09D0AC2790115400FA7788 /* ContentDetailView.swift */,
 			);
 			path = NetflixStyleSample;
 			sourceTree = "<group>";
@@ -165,11 +171,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBF7E062278150BE00F9F28F /* AppDelegate.swift in Sources */,
+				DB09D0AD2790115400FA7788 /* ContentDetailView.swift in Sources */,
 				DBF7E0872786EB3400F9F28F /* UIButton.swift in Sources */,
 				DBF7E081278296F900F9F28F /* ContentCollectionViewHeader.swift in Sources */,
 				DBF7E064278150BE00F9F28F /* SceneDelegate.swift in Sources */,
 				DBF7E083278589FB00F9F28F /* ContentCollectionViewRankCell.swift in Sources */,
 				DBF7E0762781514700F9F28F /* HomeViewController.swift in Sources */,
+				DB09D0AB27900EE800FA7788 /* ContentView.swift in Sources */,
 				DBF7E0852786E44400F9F28F /* ContentCollectionViewMainCell.swift in Sources */,
 				DBF7E07D2781568D00F9F28F /* Content.swift in Sources */,
 				DBF7E07F2782950800F9F28F /* ContentCollectionViewCell.swift in Sources */,

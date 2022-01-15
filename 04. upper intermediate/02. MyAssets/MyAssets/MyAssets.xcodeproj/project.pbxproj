@@ -12,6 +12,10 @@
 		DB09D0BF2791201300FA7788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB09D0BE2791201300FA7788 /* Assets.xcassets */; };
 		DB09D0C22791201300FA7788 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB09D0C12791201300FA7788 /* Preview Assets.xcassets */; };
 		DB09D0C92791357A00FA7788 /* NavigationBarWithButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB09D0C82791357A00FA7788 /* NavigationBarWithButton.swift */; };
+		DB09D0CB2792935600FA7788 /* AssetMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB09D0CA2792935600FA7788 /* AssetMenu.swift */; };
+		DB09D0CD279296A500FA7788 /* AssetMenuButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB09D0CC279296A500FA7788 /* AssetMenuButtonStyle.swift */; };
+		DB09D0CF279298F000FA7788 /* AssetMenuGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB09D0CE279298F000FA7788 /* AssetMenuGridView.swift */; };
+		DB09D0D127929A0F00FA7788 /* AssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB09D0D027929A0F00FA7788 /* AssetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		DB09D0BE2791201300FA7788 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB09D0C12791201300FA7788 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB09D0C82791357A00FA7788 /* NavigationBarWithButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarWithButton.swift; sourceTree = "<group>"; };
+		DB09D0CA2792935600FA7788 /* AssetMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetMenu.swift; sourceTree = "<group>"; };
+		DB09D0CC279296A500FA7788 /* AssetMenuButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetMenuButtonStyle.swift; sourceTree = "<group>"; };
+		DB09D0CE279298F000FA7788 /* AssetMenuGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetMenuGridView.swift; sourceTree = "<group>"; };
+		DB09D0D027929A0F00FA7788 /* AssetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,10 @@
 				DB09D0BE2791201300FA7788 /* Assets.xcassets */,
 				DB09D0C02791201300FA7788 /* Preview Content */,
 				DB09D0C82791357A00FA7788 /* NavigationBarWithButton.swift */,
+				DB09D0CA2792935600FA7788 /* AssetMenu.swift */,
+				DB09D0CC279296A500FA7788 /* AssetMenuButtonStyle.swift */,
+				DB09D0CE279298F000FA7788 /* AssetMenuGridView.swift */,
+				DB09D0D027929A0F00FA7788 /* AssetView.swift */,
 			);
 			path = MyAssets;
 			sourceTree = "<group>";
@@ -140,9 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB09D0CF279298F000FA7788 /* AssetMenuGridView.swift in Sources */,
 				DB09D0C92791357A00FA7788 /* NavigationBarWithButton.swift in Sources */,
+				DB09D0D127929A0F00FA7788 /* AssetView.swift in Sources */,
 				DB09D0BD2791201200FA7788 /* ContentView.swift in Sources */,
 				DB09D0BB2791201200FA7788 /* MyAssetsApp.swift in Sources */,
+				DB09D0CB2792935600FA7788 /* AssetMenu.swift in Sources */,
+				DB09D0CD279296A500FA7788 /* AssetMenuButtonStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

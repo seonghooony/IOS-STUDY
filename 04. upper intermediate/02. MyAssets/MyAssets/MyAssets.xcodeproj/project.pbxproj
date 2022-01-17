@@ -16,6 +16,9 @@
 		DB09D0CD279296A500FA7788 /* AssetMenuButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB09D0CC279296A500FA7788 /* AssetMenuButtonStyle.swift */; };
 		DB09D0CF279298F000FA7788 /* AssetMenuGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB09D0CE279298F000FA7788 /* AssetMenuGridView.swift */; };
 		DB09D0D127929A0F00FA7788 /* AssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB09D0D027929A0F00FA7788 /* AssetView.swift */; };
+		DB6F1A7827950FF900247B89 /* AssetBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F1A7727950FF900247B89 /* AssetBanner.swift */; };
+		DB6F1A7A2795103A00247B89 /* BannerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F1A792795103A00247B89 /* BannerCard.swift */; };
+		DB6F1A7E279511D200247B89 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F1A7D279511D200247B89 /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		DB09D0CC279296A500FA7788 /* AssetMenuButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetMenuButtonStyle.swift; sourceTree = "<group>"; };
 		DB09D0CE279298F000FA7788 /* AssetMenuGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetMenuGridView.swift; sourceTree = "<group>"; };
 		DB09D0D027929A0F00FA7788 /* AssetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetView.swift; sourceTree = "<group>"; };
+		DB6F1A7727950FF900247B89 /* AssetBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetBanner.swift; sourceTree = "<group>"; };
+		DB6F1A792795103A00247B89 /* BannerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCard.swift; sourceTree = "<group>"; };
+		DB6F1A7D279511D200247B89 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,13 +69,14 @@
 			children = (
 				DB09D0BA2791201200FA7788 /* MyAssetsApp.swift */,
 				DB09D0BC2791201200FA7788 /* ContentView.swift */,
+				DB09D0C82791357A00FA7788 /* NavigationBarWithButton.swift */,
+				DB09D0D027929A0F00FA7788 /* AssetView.swift */,
 				DB09D0BE2791201300FA7788 /* Assets.xcassets */,
 				DB09D0C02791201300FA7788 /* Preview Content */,
-				DB09D0C82791357A00FA7788 /* NavigationBarWithButton.swift */,
-				DB09D0CA2792935600FA7788 /* AssetMenu.swift */,
-				DB09D0CC279296A500FA7788 /* AssetMenuButtonStyle.swift */,
-				DB09D0CE279298F000FA7788 /* AssetMenuGridView.swift */,
-				DB09D0D027929A0F00FA7788 /* AssetView.swift */,
+				DB6F1A7C279510A500247B89 /* Entities */,
+				DB6F1A7B2795105000247B89 /* AssetMenu */,
+				DB6F1A792795103A00247B89 /* BannerCard.swift */,
+				DB6F1A7D279511D200247B89 /* PageViewController.swift */,
 			);
 			path = MyAssets;
 			sourceTree = "<group>";
@@ -80,6 +87,24 @@
 				DB09D0C12791201300FA7788 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB6F1A7B2795105000247B89 /* AssetMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DB09D0CC279296A500FA7788 /* AssetMenuButtonStyle.swift */,
+				DB09D0CE279298F000FA7788 /* AssetMenuGridView.swift */,
+			);
+			path = AssetMenu;
+			sourceTree = "<group>";
+		};
+		DB6F1A7C279510A500247B89 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DB09D0CA2792935600FA7788 /* AssetMenu.swift */,
+				DB6F1A7727950FF900247B89 /* AssetBanner.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,11 +178,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB09D0CF279298F000FA7788 /* AssetMenuGridView.swift in Sources */,
+				DB6F1A7E279511D200247B89 /* PageViewController.swift in Sources */,
 				DB09D0C92791357A00FA7788 /* NavigationBarWithButton.swift in Sources */,
+				DB6F1A7827950FF900247B89 /* AssetBanner.swift in Sources */,
 				DB09D0D127929A0F00FA7788 /* AssetView.swift in Sources */,
 				DB09D0BD2791201200FA7788 /* ContentView.swift in Sources */,
 				DB09D0BB2791201200FA7788 /* MyAssetsApp.swift in Sources */,
 				DB09D0CB2792935600FA7788 /* AssetMenu.swift in Sources */,
+				DB6F1A7A2795103A00247B89 /* BannerCard.swift in Sources */,
 				DB09D0CD279296A500FA7788 /* AssetMenuButtonStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

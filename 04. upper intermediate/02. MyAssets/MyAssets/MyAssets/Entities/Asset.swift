@@ -33,7 +33,7 @@ class AssetData: Identifiable, ObservableObject, Decodable {
         self.creditCardAmount = creditCardAmount
     }
 }
-
+ 
 enum CreditCardAmounts: Identifiable, Decodable {
     
 case previousMonth(amount: String)

@@ -61,11 +61,11 @@
 				DBBB295D2749EF91009D6748 /* AppDelegate.swift */,
 				DBBB295F2749EF91009D6748 /* SceneDelegate.swift */,
 				DBBB29612749EF91009D6748 /* ViewController.swift */,
+				DBBB29712749F608009D6748 /* SettingViewController.swift */,
 				DBBB29632749EF91009D6748 /* Main.storyboard */,
 				DBBB29662749EF92009D6748 /* Assets.xcassets */,
 				DBBB29682749EF92009D6748 /* LaunchScreen.storyboard */,
 				DBBB296B2749EF92009D6748 /* Info.plist */,
-				DBBB29712749F608009D6748 /* SettingViewController.swift */,
 			);
 			path = LEDBoard;
 			sourceTree = "<group>";

@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     var doneButton: UIBarButtonItem?
     
     var tasks = [Task]() {
+        // 배열에 추가될때마다 실행
         didSet {
             self.saveTasks()
         }

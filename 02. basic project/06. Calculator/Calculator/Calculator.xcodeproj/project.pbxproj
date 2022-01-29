@@ -61,11 +61,11 @@
 				DBA78C87274B29D90046EE14 /* AppDelegate.swift */,
 				DBA78C89274B29D90046EE14 /* SceneDelegate.swift */,
 				DBA78C8B274B29D90046EE14 /* ViewController.swift */,
+				DBA78C9B274B431E0046EE14 /* RoundButton.swift */,
 				DBA78C8D274B29D90046EE14 /* Main.storyboard */,
 				DBA78C90274B29D90046EE14 /* Assets.xcassets */,
 				DBA78C92274B29D90046EE14 /* LaunchScreen.storyboard */,
 				DBA78C95274B29D90046EE14 /* Info.plist */,
-				DBA78C9B274B431E0046EE14 /* RoundButton.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";

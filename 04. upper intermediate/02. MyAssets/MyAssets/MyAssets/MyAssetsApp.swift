@@ -11,7 +11,8 @@ import SwiftUI
 struct MyAssetsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AssetView()
+            //ContentView()
         }
     }
 }

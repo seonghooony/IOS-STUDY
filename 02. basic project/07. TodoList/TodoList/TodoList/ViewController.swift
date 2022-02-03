@@ -22,12 +22,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // done 버튼 생성
         self.doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonTap))
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.loadTasks()
     }
     
+    //done버튼 클릭 시 실행
     //#selector와 연결하기 위해 저 어트리뷰트를 붙여야함
     @objc func doneButtonTap() {
         self.navigationItem.leftBarButtonItem = self.editButton

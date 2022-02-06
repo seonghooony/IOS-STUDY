@@ -42,6 +42,7 @@ class WriteDiaryViewController: UIViewController {
         self.confirmButton.isEnabled = false
     }
     
+    // 셀을 클릭하여 수정모드일 경우 실행
     private func configureEditMode() {
         switch self.diaryEditorMode {
         case let .edit(_, diary):
@@ -71,6 +72,7 @@ class WriteDiaryViewController: UIViewController {
         self.contentsTextView.layer.cornerRadius = 5.0
     }
     
+    //날짜 textField에 데이트피커 나오도록 함
     private func configureDatePicker() {
         //날짜만 나오게 설정
         self.datePicker.datePickerMode = .date
@@ -97,6 +99,7 @@ class WriteDiaryViewController: UIViewController {
     
     private func configureInputField() {
         self.contentsTextView.delegate = self
+        //확인, 수정 버튼 활성화 검증
         self.titleTextField.addTarget(self, action: #selector(titleTextFieldDidChange(_:)), for: .editingChanged)
         self.dateTextField.addTarget(self, action: #selector(dateTextFieldDidChange(_:)), for: .editingChanged)
     }
@@ -109,12 +112,12 @@ class WriteDiaryViewController: UIViewController {
         self.validateInputField()
     }
     
+    //확인, 수정 버튼 클릭 시
     @IBAction func tapConfirmButton(_ sender: UIBarButtonItem) {
         
         guard let title = self.titleTextField.text else { return }
         guard let contents = self.contentsTextView.text else { return }
         guard let date = self.diaryDate else { return }
-        
         
         switch self.diaryEditorMode {
         case .new:

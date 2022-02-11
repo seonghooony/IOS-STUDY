@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     private var userCollections = PHFetchResult<PHAssetCollection>()
     //private var myAlbums = PHFetchResult<PHAssetCollection>()
     
+    private var refreshControl = UIRefreshControl()
+    
     let imageManager: PHCachingImageManager = PHCachingImageManager()
 
     @IBOutlet weak var albumCollectionView: UICollectionView!
@@ -25,6 +27,20 @@ class ViewController: UIViewController {
         
         self.checkAuthAndLoadData()
         
+        albumCollectionView.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        
+    }
+    
+    @objc func refresh() {
+        self.albumCollectionView.reloadData()
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if(refreshControl.isRefreshing) {
+            self.refreshControl.endRefreshing()
+            self.checkAuthAndLoadData()
+        }
     }
     
     func getPhotosFromIphone() {

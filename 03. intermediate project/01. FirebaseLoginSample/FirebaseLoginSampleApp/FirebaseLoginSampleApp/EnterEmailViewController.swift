@@ -100,3 +100,4 @@ extension EnterEmailViewController: UITextFieldDelegate {
         nextButton.isEnabled = !isEmailEmpty && !isPasswordEmpty
     }
 }
+

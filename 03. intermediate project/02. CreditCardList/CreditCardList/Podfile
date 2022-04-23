@@ -11,4 +11,5 @@ target 'CreditCardList' do
   pod 'Firebase/Database'
   pod 'Firebase/Firestore'
   pod 'FirebaseFirestoreSwift'
+  pod 'GoogleSignIn'
 end

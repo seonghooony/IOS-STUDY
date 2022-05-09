@@ -11,6 +11,7 @@
 		DB1B4ED82827EEC10091338D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B4ED72827EEC10091338D /* ContentView.swift */; };
 		DB1B4EDA2827EEC20091338D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB1B4ED92827EEC20091338D /* Assets.xcassets */; };
 		DB1B4EDD2827EEC20091338D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB1B4EDC2827EEC20091338D /* Preview Assets.xcassets */; };
+		DB1B4EE428294C990091338D /* testModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1B4EE328294C990091338D /* testModelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DB1B4ED72827EEC10091338D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DB1B4ED92827EEC20091338D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB1B4EDC2827EEC20091338D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB1B4EE328294C990091338D /* testModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testModelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				DB1B4ED52827EEC10091338D /* SwiftUIAndMVVMApp.swift */,
+				DB1B4EE328294C990091338D /* testModelView.swift */,
 				DB1B4ED72827EEC10091338D /* ContentView.swift */,
 				DB1B4ED92827EEC20091338D /* Assets.xcassets */,
 				DB1B4EDB2827EEC20091338D /* Preview Content */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB1B4ED82827EEC10091338D /* ContentView.swift in Sources */,
+				DB1B4EE428294C990091338D /* testModelView.swift in Sources */,
 				DB1B4ED62827EEC10091338D /* SwiftUIAndMVVMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
